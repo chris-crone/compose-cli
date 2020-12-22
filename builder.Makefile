@@ -24,7 +24,7 @@ ifeq ($(GOOS),windows)
   EXTENSION:=.exe
 endif
 
-STATIC_FLAGS=CGO_ENABLED=0
+STATIC_FLAGS=CGO_ENABLED=1
 
 GIT_TAG?=$(shell git describe --tags --match "v[0-9]*")
 
